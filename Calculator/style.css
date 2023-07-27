@@ -1,0 +1,56 @@
+body{
+    background-image: linear-gradient(purple,indigo,blue,green,yellow,red);
+    height: 100vh;
+    max-height: 100vh;
+    background-size: cover;
+}
+#calculator{
+    background-color: rgb(37, 35, 35);
+    width: 36vw;
+    margin: 1em auto;
+    text-align: center;
+    padding: 1em 0;
+    border: 1.5px solid black;
+}
+#calculator div{
+    text-align: center;
+    display: block;
+    padding: 0.3em 3.5%;
+}
+.power {
+    background-color: red;
+    font-size: 1.1em ;
+    color: white;
+    width: 31%;
+    height: 100%;
+}
+#calculator input{
+    font-size: 2em;
+    padding: 0.3em 0.2em;
+    width: 34vw;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: rgba(97, 134, 41, 0.665);
+}
+table{
+    border: 2px solid black ;
+    margin: auto;
+    padding: 0.5em 0.2em;
+    width: 34vw;
+    margin-top: 1px;
+}
+table button{
+    width: 100%;
+    height: 40%;
+    font-size: 2em;
+    background: rgb(16, 16, 16);
+    color: aliceblue;
+}
+.operator{
+    background-color: rgb(26, 23, 23);
+}
+@media screen and (max-width: 480px) {
+    table button {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&family=Roboto&display=swap');
+/* font-family: 'Cinzel', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;*/
+
+
+/* Reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h3{
+    font-family: Dosis,sans-serif;
+}
+
+/* Header  */
+header{
+    max-width: 100%;
+    overflow-x: hidden;
+    max-height: 100vh;
+    background-image:linear-gradient(45deg,rgba(0, 0, 0, 0.847),rgba(255, 255, 255, 0.162),rgba(255, 225, 53, 0.103)),  url("IMG20211212164756.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+#social{
+    padding:0em 1em;
+}
+#social .icons{
+    margin:1em 0.5em;
+    font-size: 1.4em;
+    color: white;
+}
+#hamBurger{
+    display: none;
+}
+#menu{
+    display: none;
+}
+#main{
+    padding: 0 2em;
+    margin: 4.6em 0em;
+    color: white;
+}
+#main #p1{
+    font-size: 3em;
+}
+#main h3{
+    font-size: 5em;
+    padding-left: 0.2em;
+    font-family: 'Dancing Script', cursive;
+}
+#main #p2{
+    font-size: 1.1em;
+    font-family: 'Cinzel', serif;
+    padding-left: 0.6em;
+}
+#main a{
+    background-color: #f85c70;
+    border-color: #f85c70;
+    color: white;
+    display: inline-block;
+    font-size: 1.4em;
+    margin: 2em 0.3em;
+    padding: 0.4em 0.6em;
+    border-radius: 1em;
+    text-decoration: none;
+}
+
+/* Nav Bar  */
+#nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3em 4%;
+    box-sizing: border-box;
+    background-color: white;
+    height: 4.5em;
+    position: sticky;
+    top: 0;
+    margin: auto;
+    /* border: 1px solid black; */
+    box-shadow: 0px 4px 10px 2px rgba(45, 45, 45, 0.308);
+    z-index: 5;
+}
+#nav #middle{
+    text-align: center;
+}
+#nav #middle img{
+    width: 8.8em;
+    height: 8.7em;
+    border: 0.5em solid white;
+    border-radius: 5em;
+    opacity: 1;
+    transition: all 2s;
+}
+#middle #text{
+    display: none;
+    opacity: 0;
+    transition: all 2s;
+    font-family: 'Cinzel', serif;
+}
+#text #name{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4em;
+}
+#nav a{
+    font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+    margin: 0 0.6em;
+    color: black;
+    text-decoration: none;
+}
+#nav a:hover{
+    color: #f85c70;
+}
+#nav #left a:first-child{
+    color: #f85c70;
+}
+#navMobile{
+    display: none;
+}
+
+/* About  */
+#about{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.cards{
+    padding: 6em 3em;
+    width: 33.33333%;
+    box-sizing: border-box;
+    border: 0.5px solid rgba(128, 128, 128, 0.46);
+    border-collapse: collapse;
+    padding-bottom: 2em;
+}
+.p-head{
+    font-size: 1.9em;
+    font-family: Dosis,sans-serif;
+    margin-bottom: 1em;
+}
+.line{
+    position: relative;
+    display: block;
+    top: -0.8em;
+    padding-left: 0.2em;
+    color: #f85c70;
+}
+.p-primary{
+    font-family: Dosis,sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+.p-secondary{
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 0.9em;
+    color: rgb(94, 94, 94);
+    margin-bottom: 2em;
+}
+#card1 button{
+    font-family: Dosis,sans-serif;
+    color: #f85c70;
+    border: 1px solid #f85c70;
+    border-radius: 5px;
+    padding: 0.5em 0.5em;
+    font-size: 1.01em;
+    background-color: white;
+}
+#card2 div{
+    margin-bottom: 5em;
+}
+#card2 div p {
+    color: rgb(95, 95, 95);
+    margin: 0.4em 0;
+}
+#card2 div p span{
+    color: rgb(26, 25, 25);
+}
+#card2 i{
+    color:#f85c70;
+    font-size: 1.4em;
+    margin: 0.2em;
+}
+#card3>div{
+    display: flex;
+    margin-bottom: 0.9em;
+
+}
+#card3>div span{
+    display: flex;
+    align-items: center;
+    color: #f85c70;
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+#card3 .p-primary1{
+    font-family: Dosis,sans-serif;
+    font-weight: 500;
+}
+#card3 .p-secondary1{
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 0.9em;
+    color: rgb(94, 94, 94);
+}
+
+/* Skill Section  */
+#skill{
+    width: 90%;
+    margin: auto;
+    padding: 2em 0;
+}
+.flex{
+    display: flex;
+}
+.flex-items{
+    width: 50%;
+    flex-wrap: wrap;
+    padding: 0;
+    box-sizing: border-box;
+    padding-right: 7em;
+}
+#skill h3{
+    font-family: Dosis,sans-serif;
+    text-align: center;
+    font-size: 2.2em;
+    margin: 1em;
+}
+#skill span{
+    color: #f85c70;
+}
+.flex-items h4{
+    font-family: Dosis,sans-serif;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.flex-items p{
+    font-family: "Source Sans Pro",sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    color: rgb(52, 52, 52);
+}
+#percentage{
+    padding: 0.5em 0;
+}
+#percentage p{
+    color:#f85c70;
+    font-size: 2em;
+}
+#percentage span{
+    font-size: 2em;
+    color: rgb(41, 41, 41);
+}
+#percentage .flex-items{
+    margin-bottom: 2.5em;
+}
+
+/* Our Team  */
+#team{
+    width: 90%;
+    margin: 3em auto;
+    text-align: center;
+    border-radius: 3em;
+    border: 1px solid blue;
+    padding: 2em 0em;
+    background-image: url("/bg.jpg");
+    background-size: cover;
+    box-shadow: 0px 3px 15px rgba(128, 128, 128, 0.588);
+    margin-bottom: 10%;
+}
+#team>p{
+    font-size: 2em;
+    color: #fff;
+    font-family: "Swiss 721";
+    margin: 1em ;
+}
+#team #container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#team #container>div{
+    width: 30%;
+}
+#team #container>div img{
+    width: 72%;
+    border-radius: 70em;
+    height: 15em;
+    object-fit: cover;
+    margin: 1em;
+}
+#team #container>div h3 {
+    font-size: 1.9em;
+    color: #fff;
+    font-family: "Swiss 721";
+    letter-spacing: 1px;
+}
+#team #container>div p {
+    font-size: 1.2em;
+    color: rgb(213, 213, 213);
+    font-family: "Swiss 721";
+}
+
+
+/* My-Projects  */
+#my-project{
+    width: 90%;
+    margin: 3em auto;
+    padding: 1em 0;
+}
+#my-project h3{
+    font-size: 3em;
+    text-align: center;
+    font-family: Dosis,sans-serif;
+}
+#my-project h3 span{
+    color: #f85c70;
+}
+#project {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content:space-around; */
+    width: 100%;
+}
+#project a{
+    display: block;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    /* border: 1px solid black; */
+    border-radius: 1em;
+    padding: 3em 1em;
+    margin:1em;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px black;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+#project h4{
+    font-family: Dosis,sans-serif;
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 1em;
+}
+#project li{
+    list-style-type: none;
+    margin: 0.5em 0;
+    color: rgb(255, 255, 255);
+}
+#my-project p{
+    text-align: right;
+    margin: 1em;
+}
+
+
+/* Contact section  */
+#contact{
+    width: 90%;
+    margin: auto;
+    padding: 2em;
+}
+#contact h3{
+    font-size: 3em;
+    text-align: center;
+    font-family: Dosis,sans-serif;
+}
+#contact h4{
+    font-family: Dosis,sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+    margin-bottom: 1em;
+}
+#contact p{
+    font-family: "Source Sans Pro",sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    color: rgb(52, 52, 52);
+    padding: 0 8em;
+    text-align: center;
+}
+#contact button{
+    display: block;
+    margin: auto;
+}
+#contact div{
+    text-align: center;
+}
+#contact a{
+    padding: 0.5em 0;
+    font-size: 1.1em;
+    border-radius: 2em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 30%;
+    margin: 1em auto;
+}
