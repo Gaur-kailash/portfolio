@@ -177,6 +177,16 @@ header{
     font-size: 1.01em;
     background-color: white;
 }
+.resume_btn{
+    text-decoration : none;
+    font-family: Dosis,sans-serif;
+    color: #f85c70;
+    border: 1px solid #f85c70;
+    border-radius: 5px;
+    padding: 0.5em 0.5em;
+    font-size: 1.01em;
+    background-color: white;
+}
 #card2 div{
     margin-bottom: 5em;
 }
